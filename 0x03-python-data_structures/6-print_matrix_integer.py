@@ -6,9 +6,9 @@ def print_matrix_integer(matrix=[[]]):
             y = len(matrix[i])
             for z in range(0, y):
                 if z == y:
-                    print("{}".format(matrix[i][z]))
+                    print("{:d}".format(matrix[i][z]))
                 else:
-                    print("{}".format(matrix[i][z]), end=" ")
+                    print("{:d}".format(matrix[i][z]), end=" ")
             print()
     else:
         print(end="")
