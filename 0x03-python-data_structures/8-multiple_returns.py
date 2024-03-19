@@ -5,6 +5,6 @@ def multiple_returns(sentence):
         b = sentence[0]
         tup = (a, b)
     else:
-        b == "None"
+        b = "None"
         tup = (a, b)
     return tup
