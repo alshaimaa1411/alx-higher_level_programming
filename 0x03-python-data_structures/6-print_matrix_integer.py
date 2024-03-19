@@ -5,10 +5,9 @@ def print_matrix_integer(matrix=[[]]):
         for i in range(0, x):
             y = len(matrix[i])
             for z in range(0, y):
-                if z == y:
+                if z == y - 1:
                     print("{:d}".format(matrix[i][z]))
                 else:
                     print("{:d}".format(matrix[i][z]), end=" ")
-            print()
     else:
         print(end="")
