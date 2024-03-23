@@ -1,7 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-        matrix[i][j] = matrix[i][j]**2
-    n_matrix = matrix
-    return n_matrix
+    return [list(map((lambada x: x * x), i) for i in matrix)]
