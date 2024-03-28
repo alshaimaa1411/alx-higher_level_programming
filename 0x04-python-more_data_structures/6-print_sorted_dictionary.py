@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
     s_key = sorted(a_dictionary.keys())
-    b_dic = {key: a_dictionary[key] for key in s_key}
-    for key, value in b_dic.items():
-        print("{:s} : {}".format(str(key), value))
+    for key in s_ket:
+        value = a_dictionary[key]
+        print("{} : {}".format(key, value))
