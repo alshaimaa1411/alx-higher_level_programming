@@ -4,6 +4,7 @@ def best_score(a_dictionary):
         n_li = []
         for key in a_dictionary.keys():
             value = a_dictionary[key]
+            value = int(value)
             n_li.append(value)
         n_li = sorted(n_li)
         x = n_li[-1]
