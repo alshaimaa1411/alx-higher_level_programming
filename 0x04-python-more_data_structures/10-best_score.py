@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary or len(a_dictionary):
+    if a_dictionary and len(a_dictionary):
         n_li = []
         for key in a_dictionary.keys():
             value = a_dictionary[key]
