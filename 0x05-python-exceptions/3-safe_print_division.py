@@ -4,7 +4,7 @@ def safe_print_division(a, b):
         x = a / b
         return x
     except (ValueError, ZeroDivisionError):
-        x = "None"
+        x = None
         return None
     finally:
         print("inside result: {}".format(x))
