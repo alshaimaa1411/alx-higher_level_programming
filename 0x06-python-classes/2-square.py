@@ -11,10 +11,9 @@ class Square:
         ''' square fun
         __size : size of square
         '''
-        if type(size) is int:
-            if size < 0:
-                raise ValueErorr('size must be >= 0')
-            else:
-                self.__size = size
+        if type(size) is not int:
+            raise TypeError('size must be an integer')
         else:
-            raise TypeErorr('size must be an integer')
+            self.__size = size
+        if size < 0:
+            raise ValueError('size must be >= 0')
