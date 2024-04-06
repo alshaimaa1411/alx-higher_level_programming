@@ -1,7 +1,15 @@
 #!/usr/bin/python3
+''' square class'''
+
+
 class Square:
-    '''square class'''
+    '''square class
+    size (int): size square
+    '''
     def __init__(self, size=0):
+        ''' square fun
+        __size: size 
+        '''
         if type(size) is not int:
             raise TypeError ('size must be an integer')
         else:
@@ -9,4 +17,6 @@ class Square:
         if size < 0:
             raise ValueError('size must be >= 0')
     def area(self):
+        ''' ares: square
+        '''
         return self.__size * 2
