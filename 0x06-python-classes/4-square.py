@@ -10,9 +10,11 @@ class Square:
         return self.__size ** 2
 
     def size(self):
+        ''' size attru'''
         return self.__size
 
     def size(self, value):
+        ''' value fun req '''
         if type(value) is not int:
             raise TypeError("size must be an integer")
         else:
