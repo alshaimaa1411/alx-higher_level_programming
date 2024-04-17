@@ -5,12 +5,12 @@
 class Rectangle:
     """ Rectangle class """
     def __init__(self, width=0, height=0):
-        """ 
+        """
         width (int): recangle width
         height (int): rectangle height
         """
-        self.width = width
         self.height = height
+        self.width = width
 
     def height(self):
         """return: height """
@@ -20,7 +20,7 @@ class Rectangle:
         """ height Error """
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        if value  < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
