@@ -15,8 +15,8 @@ class Rectangle:
         Return:
         None
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     def width(self):
         """
