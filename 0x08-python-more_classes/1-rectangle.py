@@ -1,47 +1,36 @@
 #!/usr/bin/python3
-""" rectangle class"""
+""" Retanglr class """
 
 
 class Rectangle:
-    """ rectangle class
-    Attributes:
-    __width (int): rect width
-    __hight (int): rect hight
-    """
+    """ Rectangle class """
     def __init__(self, width=0, height=0):
-        """ init rectanglr width - hight
-        width (int): width
-        hight (int): hight
-        Return:
-        None
+        """ 
+        width (int): recangle width
+        height (int): rectangle height
         """
-        self.height = height
         self.width = width
+        self.height = height
+
+    def height(self):
+        """return: height """
+        return self.__height
 
     def height(self, value):
-        """
-        width req
-        Return:
-        value
-        """
+        """ height Error """
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        else:
-            if value < 0:
-                raise ValueError("height must be >= 0")
-            else:
-                return self.__height = value
+        if value  < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
+
+    def width(self):
+        """ return: width """
+        return self.__width
 
     def width(self, value):
-        """
-        width (int): width
-        Return:
-        None
-        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
-        else:
-            if value < 0:
-                raise ValueError("width must be >= 0")
-            else:
-                return self.__width = value
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
