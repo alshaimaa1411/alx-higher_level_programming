@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 class Square:
-    ''' class square'''
+    """ class square"""
     def __int__(self, size=0):
-        ''' size attri '''
+        """ size attri """
         self.size = size
 
     def area(self):
-        '''area fun'''
+        """area fun"""
         return self.__size ** 2
 
     def size(self):
-        ''' size attru'''
+        """ size attru"""
         return self.__size
 
     def size(self, value):
-        ''' value fun req '''
+        """value fun req """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         else:
