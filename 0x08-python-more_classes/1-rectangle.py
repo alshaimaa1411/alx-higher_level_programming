@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ rectangle class"""
 
+
 class Rectangle:
     """ rectangle class
     Attributes:
@@ -24,7 +25,7 @@ class Rectangle:
         width
         """
         return self.__width
-    
+
     def width(self, value):
         """
         width req
@@ -38,7 +39,7 @@ class Rectangle:
                 raise ValueError("width must be >= 0")
             else:
                 self.__width = value
-    
+
     def height(self):
         """
         Return:
@@ -53,9 +54,9 @@ class Rectangle:
         None
         """
         if type(value) is not int:
-            raise TypeError("width must be an integer")
+            raise TypeError("heigt must be an integer")
         else:
             if value < 0:
-                raise ValueError("width must be >= 0")
+                raise ValueError("height must be >= 0")
             else:
                 self.__height = value
