@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" square class"""
+
+
 class Square:
     """ class square"""
     def __int__(self, size=0):
