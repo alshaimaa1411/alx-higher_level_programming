@@ -5,11 +5,11 @@
 class Square:
     """ square class"""
     def __init__(self, size=0):
-        """ attri size"""        
+        """ attri size"""
         self.size = size
 
     def area(self):
-        """ return area"""        
+        """ return area"""
         return self.__size ** 2
 
     @property
