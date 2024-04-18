@@ -50,10 +50,11 @@ class Rectangle:
             return 0
         else:
             return (self.__height + self.__width) * 2
-    def str(self):
+    def __str__(self):
         """ print triangle"""
+        stri=""
         if self.__height == 0 or self.__width == 0:
             print()
         else:
-            for _ in range(self.__hight):
-                print(''.join(['#' for _ in range(self.__width)]))
+            stri += "\n".join("#" * self.__width for _ in range(self.__height))
+        return stri
