@@ -1,0 +1,9 @@
+import module:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+first case:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", "John")
+	    except Exception as e:
+    		print("[{}] {}".format(e.__class__.__name__, e))
+	[TypeError] name must be an integer
