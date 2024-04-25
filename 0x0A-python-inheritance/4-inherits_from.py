@@ -2,6 +2,6 @@
 """ class """
 
 
-def is_inherited_instance(obj, base_class):
+def inherits_from(obj, a_class):
     """ return type"""
-    return isinstance(obj, base_class) or issubclass(type(obj), base_class)
+    return isinstance(obj, a_class) or issubclass(type(obj), a_class)
