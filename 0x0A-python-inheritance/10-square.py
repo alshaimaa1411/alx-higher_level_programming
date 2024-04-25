@@ -40,10 +40,10 @@ class Square(Rectangle):
     """ square class"""
     def __init__(self, size):
         """ init attri"""
-        super().integer_validator("size", size)
+        self.integer_validator("size", size)
         self.__size = size
         super().__init(size, size)
 
     def area(self):
         """area fun"""
-        return self.__size * self.__size
+        return self.__size ** 2
