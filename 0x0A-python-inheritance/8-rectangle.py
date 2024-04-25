@@ -4,6 +4,7 @@
 
 class BaseGeometry:
     """ e,pty class"""
+
     def area(self):
         """ exception aea"""
         raise Exception("area() is not implemented")
@@ -15,9 +16,11 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """ ractangle class"""
+
     def __init__(self, width, height):
         """ init attri"""
-        super().integer_validator(name="width", value = width)
-        super().integer_validator(name="height", value = height)
+        super().integer_validator(name="width", value=width)
+        super().integer_validator(name="height", value=height)
