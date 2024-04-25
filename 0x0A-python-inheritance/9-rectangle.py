@@ -23,4 +23,14 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """ init attri"""
         super().integer_validator("width", width)
+        self.__width = width
         super().integer_validator("height", height)
+        self.__height = height
+
+    def area(self):
+        """ arae fun"""
+        return self.__width * self.__height
+
+    def __str__(self):
+        """print w/h"""
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
