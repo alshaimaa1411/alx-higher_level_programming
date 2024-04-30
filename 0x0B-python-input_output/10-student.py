@@ -16,6 +16,7 @@ class Student:
         return self.__dict__
     
     def to_json(self, attrs=None):
+        """ to json"""
         if attrs is None:
             return self.__dict__
         else:
