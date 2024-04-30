@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""
+function that creates an Obj”
+"""
+
 import json
-""" creat obj"""
 
 
 def load_from_json_file(filename):
-    """ creat obj"""
-    with open(filename, "r", encoding="UTF8") as mfile:
-        lfile = json.loads(mfile)
-        return lfile
+    """crate obj"""
+    with open(filename, 'r', encoding='utf-8') as mfile:
+        return json.load(mfile)
     
