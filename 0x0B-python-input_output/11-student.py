@@ -24,5 +24,11 @@ class Student:
                     attr: getattr(self, attr)
                     for attr in attrs if hasattr(self, attr)
                     }
+
     def reload_from_json(self, json):
-        return json.load(json)
+        """reload fun"""
+        for key in json:
+            try:
+                setattr(self, key, json[key])
+            except FileNotFoundError:
+                pass
