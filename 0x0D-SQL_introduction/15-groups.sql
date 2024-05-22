@@ -1,5 +1,5 @@
--- Lists the number of records
+-- NUMBER OF RECORDS
 SELECT score, COUNT(*) AS number
 FROM second_table
 GROUP BY score
-ORDER BY numbe DESC;
+ORDER BY number;
