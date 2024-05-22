@@ -1,0 +1,2 @@
+-- NEW TABLE
+CREATE TABLE IF NOT EXISTS id_not_null(id INT IFNULL(1), name VARCHAR(256));
