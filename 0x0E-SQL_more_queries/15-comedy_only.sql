@@ -6,4 +6,4 @@ ON t.id = ts.show_id
 INNER JOIN tv_genres AS g
 ON g.id = ts.genre_id
 WHERE g.name = "Comedy "
-ORDER BY tv_shows.title
+ORDER BY t.title
