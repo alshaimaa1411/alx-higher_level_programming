@@ -6,13 +6,13 @@ import sys
 
 if __name__ == "__main__":
     mydb = MySQLdb.connect(host="localhost", user=sys.argv[1],
-                           passwd=sys.argv[2], db=sys.argv[3], name=sys.argv[4], port=3306)
+                           passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = mydb.cursor()
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
+                .format(sys.argv[4]))
     states = cur.fetchall()
     for x in states:
-        if x == __name__:
-            print(x)
+        print(x)
     cur.close()
     mydb.close()
     
