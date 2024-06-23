@@ -11,9 +11,9 @@ if __name__ == "__main__":
     state = sys.argv[4]
     cur.execute("""SELECT cities.name
                 FROM cities INNER JOIN
-                states ON cities.state_id = states.id""")
+                states ON cities.state_id = states.id""", (state, ))
     city = cur.fetchall()
-    result = list(city[0] for x in city)
+    result = list(row[0] for row in city)
     print(*result, sep=", ")
     cur.close()
     mydb.close()
