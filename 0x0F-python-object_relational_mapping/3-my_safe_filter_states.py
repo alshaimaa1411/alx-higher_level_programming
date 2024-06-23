@@ -9,8 +9,7 @@ if __name__ == "__main__":
                            passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = mydb.cursor()
     state = sys.argv[4]
-    cur.execute("""SELECT * FROM ststes 
-                WHERE name LIKE %s""", (state,))
+    cur.execute("SELECT * FROM ststes WHERE name LIKE %s", (state, ))
     states = cur.fetchall()
     for x in states:
         print(x)
