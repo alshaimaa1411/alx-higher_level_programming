@@ -14,6 +14,6 @@ if __name__ == "__main__":
                 states ON cities.state_id = states.id""")
     city = cur.fetchall()
     for x in city:
-        print(x)
+        print(x, end=", ")
     cur.close()
     mydb.close()
