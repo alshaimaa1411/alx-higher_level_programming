@@ -15,4 +15,3 @@ if __name__ == "__main__":
         print(x)
     cur.close()
     mydb.close()
-    
