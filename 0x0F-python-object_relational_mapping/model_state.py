@@ -1,4 +1,4 @@
-#!/bin/usr/bin
+#!/bin/usr/python3
 """
 first state modle
 """
