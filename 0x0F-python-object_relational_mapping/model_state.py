@@ -9,6 +9,7 @@ Base = declarative_base(metadata=mymetadata)
 
 class State(Base):
 
+
     """state class"""
 
     __tablename__ = 'states'
