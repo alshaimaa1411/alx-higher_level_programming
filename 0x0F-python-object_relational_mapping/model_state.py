@@ -2,8 +2,8 @@
 """
 first state modle
 """
-from SQLAlchemy import Column, Integer, String, MetaData
-from SQLAlchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, MetaData
+from sqlalchemy.ext.declarative import declarative_base
 
 mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
