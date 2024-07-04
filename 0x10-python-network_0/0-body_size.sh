@@ -17,5 +17,4 @@ if [ -z "$response" ]; then
     exit 1
 fi
 
-# Print the size of the response body in bytes
-echo "Size of the body of the response: $response bytes"
+echo "$response"
