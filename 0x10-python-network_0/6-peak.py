@@ -1,12 +1,8 @@
+#!/usr/bin/python3
+""" find peak"""
 def find_peak(list_of_integers):
     """
-    Finds a peak in a list of unsorted integers using a binary search inspired approach.
-    
-    Args:
-    - list_of_integers: A list of unsorted integers
-    
-    Returns:
-    - A peak element if found, None if the list is empty
+    find peak
     """
     if not list_of_integers:
         return None
