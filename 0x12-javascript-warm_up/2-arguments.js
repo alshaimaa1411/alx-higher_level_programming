@@ -9,4 +9,3 @@ else if (arguments.length = 1){
 else{
     console.log("Arguments found");
 }
-
