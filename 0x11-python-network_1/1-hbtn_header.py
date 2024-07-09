@@ -13,11 +13,11 @@ def fetch_x_request_id(url):
             # Check if X-Request-Id header is present
             if 'X-Request-Id' in response.headers:
                 x_request_id = response.headers['X-Request-Id']
-                print(f"X-Request-Id value: {x_request_id}")
+                print(f"{x_request_id}")
             else:
                 print("X-Request-Id header not found in the response.")
     except urllib.error.URLError as e:
-        print(f"Error fetching URL: {e}")
+        print(f"{e}")
 
 if __name__ == "__main__":
     # Assuming the URL is passed as the first command line argument
