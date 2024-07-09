@@ -4,6 +4,7 @@ import urllib.parse
 import urllib.request
 import sys
 
+
 def send_post_request(url, email):
     # Encode the email as a URL parameter
     params = urllib.parse.urlencode({'email': email})
