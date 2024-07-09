@@ -1,0 +1,27 @@
+import urllib.request
+import sys
+
+def fetch_x_request_id(url):
+    try:
+        # Create a request object
+        req = urllib.request.Request(url)
+
+        # Send the request and get the response
+        with urllib.request.urlopen(req) as response:
+            # Check if X-Request-Id header is present
+            if 'X-Request-Id' in response.headers:
+                x_request_id = response.headers['X-Request-Id']
+                print(f"X-Request-Id value: {x_request_id}")
+            else:
+                print("X-Request-Id header not found in the response.")
+    except urllib.error.URLError as e:
+        print(f"Error fetching URL: {e}")
+
+if __name__ == "__main__":
+    # Assuming the URL is passed as the first command line argument
+    if len(sys.argv) != 2:
+        print("Usage: python fetch_x_request_id.py <URL>")
+        sys.exit(1)
+    
+    url = sys.argv[1]
+    fetch_x_request_id(url)
