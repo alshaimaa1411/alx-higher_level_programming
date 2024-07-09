@@ -20,9 +20,9 @@ def fetch_x_request_id(url):
     except urllib.error.URLError as e:
         print(f"{e}")
 
-
 if __name__ == "__main__":
-
+    
+    # Assuming the URL is passed as the first command line argument
     if len(sys.argv) != 2:
         print("Usage: python fetch_x_request_id.py <URL>")
         sys.exit(1)
