@@ -2,7 +2,7 @@
 
 const args = process.argv.slice(2);
 
-if (args == null){
+if (args = null){
     console.log('No argument');
 }
 else{
