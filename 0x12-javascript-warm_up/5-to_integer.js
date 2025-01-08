@@ -9,6 +9,6 @@ if (args[0] == null) {
   if (Number.isInteger(x)) {
     console.log('My number: ' + x);
   } else {
-    console.log('Not a numbe');
+    console.log('Not a number');
   }
 }
