@@ -6,5 +6,5 @@ if (args[0] == null){
     console.log('No argument');
 }
 else{
-    console.log(args);
+    console.log(...args);
 };
