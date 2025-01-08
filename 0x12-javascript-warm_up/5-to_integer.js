@@ -9,8 +9,8 @@ else {
   const x = parseInt(args[0]);
   if (Number.isInteger(x)) {
     console.log('My number: ' + x);
-}
+  }
   else {
     console.log('Not a numbe');
-}
+  }
 }
