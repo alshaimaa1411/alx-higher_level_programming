@@ -4,9 +4,6 @@ const args = process.argv.slice(2);
 const x = parseInt(args[0]);
 
 function factorial (a) {
-    if (a === NaN){
-        return 1;
-    } 
     if (a <= 1) {
       return 1;
     } 
