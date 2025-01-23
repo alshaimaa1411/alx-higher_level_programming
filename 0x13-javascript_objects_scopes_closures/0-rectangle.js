@@ -1,8 +1,4 @@
 #!/usr/bin/node
 
-class Rectangle {
-    constructor(Rectangle) {
-        this.Rectangle = Reactangle;
-    }
-};
-exports.Rectangle;
+class Rectangle {};
+module.exports = Rectangle;
