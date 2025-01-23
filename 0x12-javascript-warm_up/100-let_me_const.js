@@ -1,3 +1,3 @@
 #!/usr/bin/node
 
-export let myVar = 333;
+myVar = 333;
