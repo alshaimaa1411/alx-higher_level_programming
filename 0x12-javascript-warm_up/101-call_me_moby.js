@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function repeat (x, theFunction) {
+ let x = function (x, theFunction) {
   for (let i = 0; i < x; i++) {
     theFunction();
   }
