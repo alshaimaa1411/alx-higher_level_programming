@@ -9,14 +9,12 @@ class Rectangle {
   }
   print () {
     for (let i = 0; i < this.height; i++) {
-        let row = '';
-        for (let a = 0; a < this.width; a++) {
-            row += 'X';
-        }
-        console.log(row);
+      let row = '';
+      for (let a = 0; a < this.width; a++) {
+        row += 'X';
+      }
+      console.log(row);
     }
   }
 }
-  //module.exports = Rectangle;
-  const r1 = new Rectangle (2, 3);
-  r1.print();
+module.exports = Rectangle;
